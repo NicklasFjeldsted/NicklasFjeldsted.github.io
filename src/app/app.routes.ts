@@ -5,7 +5,6 @@ import {Contact} from './views/contact/contact';
 
 export const routes: Routes = [
 	{ path: '', component: Home },
-	{ path: 'shop', component: Shop },
-	{ path: 'contact', component: Contact },
+	{ path: 'kontakt', component: Contact },
 	{ path: '**', component: Home },
 ];
