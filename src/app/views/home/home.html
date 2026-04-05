@@ -1,48 +1,130 @@
-	<!-- First panel -->
-	<div class="text-center system-color" id="first-panel">
-		<div class="flex flex-col gap-4">
-			<h1 class="tracking-wide text-black font-bold text-5xl">Premium Natural<br>Stone Panels</h1>
-			<h3 class="text-xl">Customize your space with our <br>diverse<br> range of stone panels.</h3>
+<!-- Page wrapper -->
+<div class="flex flex-col">
+
+	<!-- Logo bar -->
+	<section class="bg-white">
+		<div class="flex justify-center items-center h-24 px-6">
+			<a href="/"><img src="/logo.png" class="h-18"></a>
 		</div>
-		<div class="w-full flex flex-row justify-center py-12">
-			<button id="shop" class="bg-white px-5 py-4 rounded-lg text-medium font-medium system-color" type="button">
-				Shop now
-			</button>
-		</div>
-	</div>
-	<!-- Second panel -->
-	<div class="flex flex-col gap-8 px-6 py-8 bg-[#FFF] system-color text-center">
-		<div class="flex flex-col gap-6 items-center">
-			<img src="/icon-1.svg" alt="" width="60" height="60">
-			<h3 class="font-bold">Expert Consultation</h3>
-			<p class="text-sm">Our team provides personalized advice to help you select the perfect stone for your
-				project.</p>
-		</div>
-		<div class="flex flex-col gap-6 items-center">
-			<img src="/icon-2.svg" alt="" width="60" height="60">
-			<h3 class="font-bold">Custom Design Solutions</h3>
-			<p class="text-sm">We offer custom design services to create unique and stunning stone panel
-				installations.</p>
-		</div>
-		<div class="flex flex-col gap-6 items-center">
-			<img src="/icon-3.svg" alt="" width="60" height="60">
-			<h3 class="font-bold">Professional Installation</h3>
-			<p class="text-sm">Our skilled installers ensure precise and efficient installation of your stone
-				panels.</p>
-		</div>
-	</div>
-	<!-- Third panel -->
-	<div class="flex flex-col gap-4 p-4 text-center main-bg text-white">
-		<div class="images"></div>
-		<div class="px-4">
-			<h1 class="text-3xl font-normal tracking-wide">Naturally Elevating Spaces</h1>
-			<p class="text-sm">We source our stone materials from the finest quarries around the world, ensuring
-				unparalleled quality and durability. From initial consultation to final installation, we're here to
-				guide you every step of the way.</p>
-			<div class="py-8 px-2">
-				<button class="w-full bg-white px-5 py-4 rounded-lg text-medium font-medium system-color" type="button">
-					Contact Us
-				</button>
+	</section>
+
+	<!-- Hero -->
+	<section class="bg-red-200 text-white">
+		<div class="flex flex-col gap-6 px-6 py-48">
+			<h2 class="text-3xl">MVO</h2>
+			<h4 class="text-xl font-normal">Murerfirmaet til alle opgaver</h4>
+
+			<ul class="flex flex-col gap-4 px-2">
+				<li class="flex flex-row gap-2 items-center">
+					<fa-icon [icon]="['fas', 'angle-right']" size="xs"></fa-icon>
+					<span class="text-xl font-normal">Mange års erfaring</span>
+				</li>
+				<li class="flex flex-row gap-2 items-center">
+					<fa-icon [icon]="['fas', 'angle-right']" size="xs"></fa-icon>
+					<span class="text-xl font-normal">Speciale i erhvervsprojekter</span>
+				</li>
+				<li class="flex flex-row gap-2 items-center">
+					<fa-icon [icon]="['fas', 'angle-right']" size="xs"></fa-icon>
+					<span class="text-xl font-normal">Høj kvalitet og skræddersyede løsninger</span>
+				</li>
+			</ul>
+
+			<div class="flex flex-row gap-2">
+				<a href="/kontakt" class="flex flex-row gap-2 items-center bg-[#2d416d] px-8 py-4">
+					<fa-icon [icon]="['fas', 'angle-right']" size="xs"></fa-icon>
+					<span>Skriv til os</span>
+				</a>
+				<a href="tel:+45525051050" class="flex flex-row gap-2 items-center bg-[#74ada6] px-8 py-4">
+					<fa-icon [icon]="['fas', 'phone']" class="scale-x-[-1]"></fa-icon>
+					<span>52 60 51 05</span>
+				</a>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<!-- Services -->
+	<section class="bg-white">
+		<div class="flex flex-col gap-6 px-6 py-12">
+			<h3 class="text-2xl font-bold leading-8">Erfarent murerfirma i København</h3>
+
+			<p class="text-sm leading-6">
+				Hos Eriksen ApS hjælper vi virksomheder, boligforeninger og andre erhvervskunder med små og store
+				murerprojekter i hele København og omegn. Så hvis I leder efter en pålidelig samarbejdspartner til
+				jeres murerarbejde, er vi jeres oplagte valg.
+			</p>
+
+			<ul class="list-disc list-inside flex flex-col gap-2 text-sm ms-2">
+				<li>Hovedentrepriser</li>
+				<li>Fagentrepriser</li>
+				<li>Tagarbejde</li>
+				<li>Facaderenovering</li>
+				<li>Badeværelser</li>
+			</ul>
+
+			<p class="text-sm leading-6">
+				I er altid velkomne til at ringe eller skrive til os, hvis I står med et projekt, vi skal hjælpe med.
+				Uanset opgavens omfang kan I forvente løsninger i høj kvalitet, der holder i mange år frem.
+			</p>
+
+			<div class="flex flex-row gap-2 text-white">
+				<a href="/kontakt" class="flex flex-row gap-2 items-center bg-[#2d416d] px-8 py-4">
+					<fa-icon [icon]="['fas', 'angle-right']" size="xs"></fa-icon>
+					<span>Skriv til os</span>
+				</a>
+				<a href="tel:525051050" class="flex flex-row gap-2 items-center bg-[#74ada6] px-8 py-4">
+					<fa-icon [icon]="['fas', 'phone']" class="scale-x-[-1]"></fa-icon>
+					<span>52 60 51 05</span>
+				</a>
+			</div>
+
+			<div class="border border-black h-80 w-full flex justify-center items-center text-sm text-gray-400">
+				Billede
+			</div>
+		</div>
+	</section>
+
+	<!-- Competencies -->
+	<section class="bg-white">
+		<div class="flex flex-col gap-1 px-1 py-8">
+			<h2 class="text-center font-bold text-4xl text-black mb-8">Kompetencer</h2>
+
+			<div class="flex flex-col gap-1 text-white">
+				<div class="flex flex-col gap-2 py-12 px-6 bg-red-200">
+					<h3 class="text-xl font-bold">Nr 1. kompetence</h3>
+					<p class="text-sm">Kort information omkring kompetence Nr. 1</p>
+				</div>
+				<div class="flex flex-col gap-2 py-12 px-6 bg-red-200">
+					<h3 class="text-xl font-bold">Nr 2. kompetence</h3>
+					<p class="text-sm">Kort information omkring kompetence Nr. 2</p>
+				</div>
+				<div class="flex flex-col gap-2 py-12 px-6 bg-red-200">
+					<h3 class="text-xl font-bold">Nr 3. kompetence</h3>
+					<p class="text-sm">Kort information omkring kompetence Nr. 3</p>
+				</div>
+				<div class="flex flex-col gap-2 py-12 px-6 bg-red-200">
+					<h3 class="text-xl font-bold">Nr 4. kompetence</h3>
+					<p class="text-sm">Kort information omkring kompetence Nr. 4</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- kontakt -->
+	<section class="bg-red-200">
+		<div class="py-20 px-4">
+			<div class="flex flex-col gap-4 px-6 py-4 bg-white">
+				<h3 class="text-2xl font-bold leading-8">Kontakt os for mere information </h3>
+				<p>
+					Er I interesserede i at høre mere om vores
+					virksomhed, eller mangler I murere til et
+					specifikt projekt? Fang os telefonisk på telefon <a href="tel:+52605105" class="link-color underline">52 60 51 05</a> eller skriv til os på vores mail
+					<a href="mailto:mvomikeosbeck2600@gmail.com" class="link-color underline">mvomikeosbeck2600&#64;gmail.com</a>.
+				</p>
+				<p>
+					Vi har også en <a href="/kontakt" class="link-color underline">kontaktformular</a> her på vores hjemmeside, som I kan gå ind og benytte. Vi håber at høre fra jer inden længe, så vi
+					kan gøre jeres projekt til en realitet.
+				</p>
+			</div>
+		</div>
+	</section>
+</div>

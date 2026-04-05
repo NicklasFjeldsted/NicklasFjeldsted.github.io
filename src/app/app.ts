@@ -8,9 +8,10 @@ import {
 } from "@angular/material/icon";
 import {Footer} from './shared/footer/footer';
 import {Header} from './shared/header/header';
+import {Sidebar} from './shared/sidebar/sidebar';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MatIconModule, Footer, Header],
+  imports: [RouterOutlet, MatIconModule, Footer, Header, Sidebar],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 	standalone: true
@@ -18,6 +19,11 @@ import {Header} from './shared/header/header';
 })
 export class App {
   protected readonly title = signal('murerfirmaet-mvo');
+  sidebarOpen = signal(false);
+
+  toggleSidebar() {
+    this.sidebarOpen.update(open => !open);
+  }
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer)
   {

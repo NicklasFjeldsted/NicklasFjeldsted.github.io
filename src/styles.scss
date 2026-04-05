@@ -35,16 +35,10 @@ body {
   margin: 0;
 }
 @import "tailwindcss";
-@font-face {
-	font-family: 'Lato';
-	src: url('assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
 
 @font-face {
-	font-family: 'Urbanist';
-	src: url('assets/fonts/Urbanist/static/Urbanist-Regular.ttf') format('truetype');
+	font-family: 'Open Sans';
+	src: url('assets/fonts/OpenSans/static/OpenSans-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -66,17 +60,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 h1, h2, h3, h4, h5, p {
-	line-height: normal;
-	font-family: 'Urbanist', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
-.lato {
-	h1, h2, h3, h4, h5, p {
-		line-height: normal;
-		font-family: 'Lato', sans-serif !important;
-
-	}
+h1, h2, h3, h4, h5 {
+	font-weight: bold;
 }
+
+.font-open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
 
 .main-bg {
 	background-color: variables.$system-color;
@@ -92,4 +86,8 @@ h1, h2, h3, h4, h5, p {
 
 button {
 	line-height: normal 	;
+}
+
+.link-color {
+	color: rgb(116, 173, 166);
 }
