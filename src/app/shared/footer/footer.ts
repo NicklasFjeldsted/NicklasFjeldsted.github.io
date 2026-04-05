@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
 	selector: 'app-footer',
-	imports: [],
+	imports: [FontAwesomeModule],
 	templateUrl: './footer.html',
 	styleUrl: './footer.scss',
 	standalone: true
 })
-export class Footer {
-
-}
+export class Footer {}
