@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import {MatIcon} from '@angular/material/icon';
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 
 @Component({
 	selector: 'app-home',
 	imports: [
-		MatIcon,
-		FaIconComponent,
+		FaIconComponent
 	],
 	templateUrl: './home.html',
 	styleUrl: './home.scss',
