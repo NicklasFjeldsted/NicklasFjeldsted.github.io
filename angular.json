@@ -33,6 +33,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/murerfirmaet-mvo/",
               "budgets": [
                 {
                   "type": "initial",
