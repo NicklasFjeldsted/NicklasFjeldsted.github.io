@@ -5,7 +5,6 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { registerIcons } from './shared/icons';
-import { provideLocationStrategy } from './location-strategy';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -14,7 +13,6 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
-    provideLocationStrategy(),
     {
       provide: APP_INITIALIZER,
       useFactory: (library: FaIconLibrary) => () => registerIcons(library),

@@ -9,6 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <script>
+    // Restore route encoded by 404.html redirect
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var path = params.get('p');
+      if (path) {
+        window.history.replaceState(null, '', path);
+      }
+    })();
+  </script>
   <app-root></app-root>
 </body>
 </html>

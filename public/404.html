@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Murerfirmaet MVO</title>
-    <meta http-equiv="refresh" content="0;url=/">
+    <script>
+      // Encode the path as a query param and redirect to the root
+      // so GitHub Pages serves index.html, which then restores the route
+      var path = window.location.pathname + window.location.search;
+      window.location.replace('/?p=' + encodeURIComponent(path));
+    </script>
   </head>
 </html>
