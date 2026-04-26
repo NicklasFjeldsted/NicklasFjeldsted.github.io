@@ -9,3 +9,46 @@ button  {
 #first-panel {
 	padding: 8rem 2rem;
 }
+
+%bg-base {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100px;
+	width: 100%;
+}
+
+#header-section {
+	@extend %bg-base;
+	background-image: url("/bathrooms/bathroom3.png");
+}
+
+#bathrooms {
+	@extend %bg-base;
+	background-image: url("/bathrooms/bathroom3.png");
+}
+
+#repairs {
+	@extend %bg-base;
+	background-image: url("/repairs/image0.jpeg");
+}
+
+#tile-work {
+	@extend %bg-base;
+	background-image: url("/tile-work/image0.png");
+}
+
+#special-solutions {
+	@extend %bg-base;
+	background-image: url("/special-solutions/image0.png");
+}
+
+#contact {
+	@extend %bg-base;
+	background-image: url("/tile-work/image4.png");
+}
+
+#profile {
+	@extend %bg-base;
+	background-image: url("/profile.png");
+}
